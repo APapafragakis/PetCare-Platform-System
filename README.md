@@ -58,12 +58,6 @@ The Pet Care Management System, also known as "Pet Care," is a web-based informa
 
 **Note:** We utilized XAMPP and phpMyAdmin for managing the MySQL database. AJAX was employed for asynchronous data exchange between the client and server, while Servlets facilitated server-side Java programming to handle HTTP requests and responses.
 
-## Setup Instructions
-1. Clone the repository to your local machine.
-2. Install dependencies using `npm install`.
-3. Configure environment variables.
-4. Start the server using `npm start`.
-
 ## Contributors
 - Alexandros Papafragkakisl, CSD5084
 - Dimitris Dalis, CSD4700
