@@ -1,5 +1,5 @@
 <details>
-<summary><strong>Pet Care Management System (Similar to Booking)</strong></summary>
+<summary><strong>Pet Care Management System </strong></summary>
 
 ## Description
 
