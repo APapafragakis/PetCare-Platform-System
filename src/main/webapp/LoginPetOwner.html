@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pet Owner Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/PetOwnerLogin.css">
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <h1>PawsStay Application</h1>
+        <h5>PawsStay - Heraklion Crete</h5>
+    </div>
+</header>
+
+<button id="go_home" onclick="return showHomePage(); return false;">Home Page</button>
+
+<div class="login-form-container">
+    <h1 style="text-align: center;">Pet Owner Login Page</h1>
+    <form id="loginForm" name="loginForm" onsubmit='petOwnerloginPOST();return false;'>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <input type="submit" class="button" value="Login">
+    </form>
+</div>
+
+<div id="ajaxContent"></div>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>GetKeeper</servlet-name>
+        <servlet-class>servlets.GetPetKeeper</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InitDB</servlet-name>
+        <servlet-class>servlets.InitDB</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Requests</servlet-name>
+        <servlet-class>servlets.Requests</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ShowFinishedBookings</servlet-name>
+        <servlet-class>servlets.ShowFinishedBookings</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AvailableService</servlet-name>
+        <servlet-class>servlets.AvailableService</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteUser</servlet-name>
+        <servlet-class>servlets.DeleteUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ClientsStats</servlet-name>
+        <servlet-class>servlets.ClientsStats</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>updateBookingStatus</servlet-name>
+        <servlet-class>servlets.updateBookingStatus</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteDB</servlet-name>
+        <servlet-class>servlets.DeleteDB</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AvailableUsers</servlet-name>
+        <servlet-class>servlets.AvailableUsers</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddToReviews</servlet-name>
+        <servlet-class>servlets.AddToReviews</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>registerUser</servlet-name>
+        <servlet-class>servlets.registerUser</servlet-class>
+    </servlet>
+    <servlet>
+        <description>
+    	</description>
+        <display-name>Login</display-name>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>servlets.Login</servlet-class>
+    </servlet>
+    <servlet>
+        <description>
+    	</description>
+        <display-name>Logout</display-name>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>servlets.Logout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AvailablePetKeepers</servlet-name>
+        <servlet-class>servlets.AvailablePetKeepers</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginPetOwner</servlet-name>
+        <servlet-class>servlets.LoginPetOwner</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginPetKeeper</servlet-name>
+        <servlet-class>servlets.LoginPetKeeper</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PetOwnerInformation</servlet-name>
+        <servlet-class>servlets.PetOwnerInformation</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PetKeeperInformation</servlet-name>
+        <servlet-class>servlets.PetKeeperInformation</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdatePetOwnerData</servlet-name>
+        <servlet-class>servlets.UpdatePetOwnerData</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdatePetKeeperData</servlet-name>
+        <servlet-class>servlets.UpdatePetKeeperData</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>chatGPTQuestions</servlet-name>
+        <servlet-class>servlets.chatGPTQuestions</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Chat</servlet-name>
+        <servlet-class>servlets.Chat</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PetStatistics</servlet-name>
+        <servlet-class>servlets.PetStatistics</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InsertPet</servlet-name>
+        <servlet-class>servlets.InsertPet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditPet</servlet-name>
+        <servlet-class>servlets.EditPet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddToBookings</servlet-name>
+        <servlet-class>servlets.AddToBookings</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetKeeper</servlet-name>
+        <url-pattern>/GetKeeper</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddToBookings</servlet-name>
+        <url-pattern>/AddToBookings</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InitDB</servlet-name>
+        <url-pattern>/InitDB</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteDB</servlet-name>
+        <url-pattern>/DeleteDB</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registerUser</servlet-name>
+        <url-pattern>/registerUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginPetOwner</servlet-name>
+        <url-pattern>/LoginPetOwner</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginPetKeeper</servlet-name>
+        <url-pattern>/LoginPetKeeper</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PetOwnerInformation</servlet-name>
+        <url-pattern>/PetOwnerInformation</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PetStatistics</servlet-name>
+        <url-pattern>/PetStatistics</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddToReviews</servlet-name>
+        <url-pattern>/AddToReviews</url-pattern>
+    </servlet-mapping>
+
+    Certainly! Below is a simple example of a Java servlet named ShowMyBooking. This example assumes you are using Java Servlet API 3.0 or later. If you haven't set up a Java web project or servlet container, you'll need to do so first.
+
+    Create a new Java class for your servlet, for example, ShowMyBookingServlet.java:
+    java
+    Copy code
+    import java.io.IOException;
+    import javax.servlet.ServletException;
+    import javax.servlet.annotation.WebServlet;
+    import javax.servlet.http.HttpServlet;
+    import javax.servlet.http.HttpServletRequest;
+    import javax.servlet.http.HttpServletResponse;
+
+    @WebServlet("/ShowMyBooking")
+    public class ShowMyBookingServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+    // Your logic to fetch booking data goes here
+    // For demonstration purposes, let's send a simple JSON response
+    String jsonResponse = "{\"bookingId\": 123, \"bookingName\": \"Sample Booking\"}";
+
+    // Set content type and send the response
+    response.setContentType("application/json");
+    response.setCharacterEncoding("UTF-8");
+    response.getWriter().write(jsonResponse);
+    }
+    }
+    Make sure to configure your web.xml or use annotations for servlet registration. If using annotations, the @WebServlet annotation above should be enough. If using web.xml, you would need to add an entry like this:
+    xml
+    Copy code
+    <servlet>
+        <servlet-name>ShowMyBooking</servlet-name>
+        <servlet-class>servlets.ShowMyBooking</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PetKeeperInformation</servlet-name>
+        <url-pattern>/PetKeeperInformation</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowFinishedBookings</servlet-name>
+        <url-pattern>/ShowFinishedBookings</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdatePetOwnerData</servlet-name>
+        <url-pattern>/UpdatePetOwnerData</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdatePetKeeperData</servlet-name>
+        <url-pattern>/UpdatePetKeeperData</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AvailableService</servlet-name>
+        <url-pattern>/AvailableService</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>chatGPTQuestions</servlet-name>
+        <url-pattern>/chatGPTQuestions</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AvailablePetKeepers</servlet-name>
+        <url-pattern>/AvailablePetKeepers</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Chat</servlet-name>
+        <url-pattern>/Chat</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClientsStats</servlet-name>
+        <url-pattern>/ClientsStats</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsertPet</servlet-name>
+        <url-pattern>/InsertPet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditPet</servlet-name>
+        <url-pattern>/EditPet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Requests</servlet-name>
+        <url-pattern>/Requests</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowMyBooking</servlet-name>
+        <url-pattern>/ShowMyBooking</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AvailableUsers</servlet-name>
+        <url-pattern>/AvailableUsers</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteUser</servlet-name>
+        <url-pattern>/DeleteUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>updateBookingStatus</servlet-name>
+        <url-pattern>/updateBookingStatus</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

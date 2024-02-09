@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>PawsStay Application Menu</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/map.js"></script>
+</head>
+
+<body>
+<div id="outerContent">
+    <!-- Header section -->
+    <header class="header text-white text-center py-3">
+        <div class="container">
+            <h2>PawsStay Application</h2>
+            <h5>PawsStay - Heraklion Crete</h5>
+        </div>
+    </header>
+
+    <!-- Login/Register section -->
+    <div class="login-register-container">
+        <div class="signup-section">
+            <h2 class="text-center">Sign Up for PawsStay</h2>
+            <p class="text-center">It's quick and easy.</p>
+
+            <!-- Buttons using flexbox -->
+            <div class="button-container">
+                <button type="button" class="btn btn-dark btn-sm" id="register_pet_owner"
+                        onclick="showPetOwnerForm();">Pet Owner</button>
+                <button type="button" class="btn btn-dark btn-sm" id="register_pet_keeper"
+                        onclick="showPetKeeperForm();">Pet Keeper</button>
+                <button type="button" class="btn btn-dark btn-sm" id="guest" onclick="showGuestForm();">Guest</button>
+                <button type="button" class="btn btn-dark btn-sm" id="admin" onclick="showAdminForm();">Admin</button>
+                <button type="button" class="btn btn-dark btn-sm" id="register"
+                        onclick="RegistrationForm();">Register now</button>
+            </div>
+
+            <!-- Shortened consent text -->
+            <p class="small-text text-center">
+                By signing up, you agree to our Terms and Privacy Policy.
+            </p>
+        </div>
+
+        <!-- Photo placeholder -->
+        <div class="text-center mt-2">
+            <img src="PandaLogo.png" alt="PawsStay Logo" class="img-fluid transparent-image" style="max-width: 150px;">
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer text-white text-center py-3 mt-4">
+        <div class="container">
+            <p class="footer-text">Copyright &copy; 2024 Heraklion GR Inc All rights reserved
+                <u class="footer-text">Terms Of Use</u> |
+                <u class="footer-text">Privacy Policy</u>
+            </p>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="js/registration.js"></script>
+</body>
+
+</html>

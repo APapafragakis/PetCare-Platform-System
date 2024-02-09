@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pet Owner Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/PetOwnerGeneralInformation.css">
+    <script src="js/bookings.js"></script>
+    <script src="js/availableService.js"></script>
+    <script src="js/Reviews.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+<header style="background-color: #0e1013; color: #fff;" class="text-center py-4">
+    <div class="container">
+        <h1>Pet Owner Dashboard</h1>
+        <h5>PawsStay - Heraklion Crete</h5>
+    </div>
+</header>
+
+<div class="button-container">
+    <button type="button" id="Show_Info_Owner" onclick="return showInfoPetOwner(); return false;">Show Personal Data</button>
+    <button type="button" id="Edit_Info_Owner" onclick="return showEditInfoPetOwner(); return false;">Edit Personal Data</button>
+    <button type="button" id="logout_button" onclick="return logout(); return false;">Logout</button>
+    <button type="button" id="load_messages" onclick="return showPetOwnerMessages(); return false;">Show Messages</button>
+</div>
+
+<div class="button-container">
+    <button type="button" id="spark" onclick="showSparkForm();">Insert Pet</button>
+    <button type="button" id="booking_button" onclick="return showAvailableKeepers(); return false;">Show Bookings</button>
+    <button type="button" id="petkeepers_button" onclick="showAvailablePetKeepers();">Show Available Pet Keepers</button>
+</div>
+
+<div class="button-container">
+    <button type="button" id="review" onclick="submitReview();">Make a review</button>
+</div>
+
+<div id="ajaxContent" class="text-center"></div>
+
+</body>
+
+</html>

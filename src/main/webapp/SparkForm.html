@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/ajaxRest.js"></script>
+        <script src="js/pet_form_check.js"></script>
+
+    </head>
+    <body>
+			<h3> POST Request</h3>
+    <form id="myForm" name="myForm" onsubmit='addPet();return false;'>
+            <small class="form-text text-muted">10 digits of 0 or 1 please</small>
+            <label for='pet_id'>Pet Id:</label>
+            <input id='pet_id' type='text' name='pet_id' required><br>
+            <small class="form-text text-muted">Up to 30 characters please</small>
+            <label for='name'>Pet Name:</label>
+            <input id='name' type='text' name='name' required><br>
+            <small class="form-text text-muted">Input "cat" or "dog"</small>
+            <label for='type'>Pet Type:</label>
+            <input id='type' type="text" name='type' required><br>
+
+	    <label for='breed'>Breed:</label>
+            <input id='breed' type="text" name='breed' required><br>
+	    <label for='gender'>Gender:</label>
+            <input id='gender' type="text" name='gender' required><br>
+	    <label for='birthyear'>BirthYear:</label>
+            <input id='birthyear' type="text" name='birthyear' required><br>
+            <label for='weight'>Weight:</label>
+            <input id='weight' type="text" name='weight' required><br><!-- comment -->
+            <label for='description'>Description:</label>
+            <input id='description' type="text" name='description' required><br>
+            <label for='photo'>Photo:</label>
+            <input id='photo' type="text" name='photo' required><br>
+            <input id="sub_button" type='submit' class="button" value="Add Pet"> <!-- Press this to submit form -->
+    </form>
+                        
+                        
+                        
+    <div id="ajaxContent"></div>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form id="myForm" name="myForm" onsubmit='sendRequest();return false;'>
+            <label for='username'>Pet Keeper:</label>
+            <input id='username' type='text' name='username' required><br>
+            <label for='fromDate'>from date:</label>
+            <input id='fromDate' type='date' name='fromDate' required><br>
+            <label for='toDate'>to date:</label>
+            <input id='toDate' type='date' name='toDate' required><br>
+            <label for='status'>status:</label>
+            <input id='status' type="text" name='status' required><br>
+	    <label for='price'>price:</label>
+            <input id='price' type="text" name='price' required><br>
+            <input id="submit_button" type='submit' value="Request Booking"> <!-- Press this to submit form -->
+    </form>
+        <button type="button" class="btn btn-primary" id="showbookings" onclick="ShowMyBooking();">Show my booking</button>
+    <div id="extra_field"></div>
+    </body>
+</html>

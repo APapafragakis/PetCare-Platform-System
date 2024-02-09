@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator Login - PawsStay Application</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1>PawsStay Application</h1>
+        <h5>PawsStay - Heraklion Crete</h5>
+    </div>
+</header>
+
+<div class="main-container">
+    <input type="button" id="go_home" onclick="return showHomePage(); return false;" value="Home Page">
+
+    <div class="login-form-container">
+        <h1>Administrator Login Form</h1>
+        <form id="loginForm" name="loginForm" onsubmit='adminLogin(); return false;'>
+            <div class="form-group">
+                <label for="adminUsername">Username:</label>
+                <input type="text" id="adminUsername" name="adminUsername" required>
+            </div>
+
+            <div class="form-group">
+                <label for="adminPassword">Password:</label>
+                <input type="password" name="adminPassword" id="adminPassword" required>
+            </div>
+
+            <input type="submit" class="button" value="Login">
+        </form>
+    </div>
+</div>
+
+<div id="messageContainer"></div>
+<link rel="stylesheet" type="text/css" href="CSS/adminLogin.css">
+</body>
+</html>

@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #14161a; /* Darker background color */
+    color: #fff;
+}
+
+#outerContent {
+    max-width: 600px; /* Adjust the max-width for the outer content */
+    margin: auto;
+}
+
+.header {
+    background-color: #0e1013; /* Darker background color */
+    border-bottom: 1px solid #282c35;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.header h2, .header h5 {
+    margin: 0;
+}
+
+.login-register-container {
+    background-color: #1c1f26;
+    border: 1px solid #282c35;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #0e1013; /* Darker background color */
+    border-top: 1px solid #282c35;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 100%; /* Adjust the max-width for the container */
+}
+
+.btn-dark {
+    background-color: #282c35;
+    border-color: #383d48;
+    color: #fff;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem; /* Decrease the margin between buttons */
+    font-size: 1rem; /* Decrease the font size for buttons */
+    padding: 8px; /* Decrease the padding for buttons */
+}
+
+.btn-dark:hover {
+    background-color: #383d48;
+    border-color: #555;
+    color: #fff;
+}
+
+.footer-text {
+    color: gray; /* Gray text color */
+    font-size: 0.9rem; /* Adjust the font size for the copyright text */
+}
+
+.transparent-image {
+    background: transparent;
+}
+

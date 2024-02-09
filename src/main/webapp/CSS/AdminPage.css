@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #14161a; /* Darker background color */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Make the body take the full height of the viewport */
+}
+
+.header {
+    background-color: #0e1013; /* Darker background color */
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    margin-top: 1rem;
+}
+
+.header-button {
+    background-color: #3e4d63; /* Darker button background color */
+    border: none;
+    color: #fff;
+    padding: 10px 15px; /* Adjusted padding to make buttons closer */
+    margin: 0 5px; /* Adjusted margin to make buttons closer to each other */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.header-button:hover {
+    background-color: #2f3a48; /* Darken the color on hover */
+}
+
+.content-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #14161a; /* Match the overall background color */
+    margin-top: 20px;
+}
+
+#chartContainer,
+#chartContainerOwnersAndKeepers,
+#showUsers,
+#outerContent {
+    margin-top: 20px;
+}

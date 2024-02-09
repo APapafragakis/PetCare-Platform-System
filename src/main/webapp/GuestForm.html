@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PawsStay Guest Portal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Guest.css">
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <h1>Guest Page</h1>
+        <h5>PawsStay - Heraklion Crete</h5>
+    </div>
+</header>
+
+<div class="content-container">
+    <div class="button-container">
+        <button id="PetKeepers" onclick="showAvailability();">Available Pet Keepers</button>
+        <button id="go_home" onclick="showHomePage();">Home Page</button>
+    </div>
+
+    <div id="ShowKeepers"></div>
+
+    <section>
+        <div>
+            <p>Links to other sites:</p>
+            <ul>
+                <li><a href="https://www.aspca.org/pet-care" target="_blank">ASPCA Pet Care</a></li>
+                <li><a href="https://www.akc.org/" target="_blank">American Kennel Club</a></li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+<script src="js/availability.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<link rel="stylesheet" href="CSS/Guest.css"> <!-- Link to the external stylesheet -->
+</body>
+
+</html>

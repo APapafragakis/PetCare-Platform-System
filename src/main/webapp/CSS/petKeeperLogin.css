@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1f26; /* Dark background color */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header {
+    background-color: #14161a; /* Darker background color */
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+.header h1, .header h5 {
+    margin: 0;
+}
+
+.button {
+    background-color: #282c35;
+    border: none;
+    color: #fff;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.button:hover {
+    background-color: #1f232a; /* Darken the color on hover */
+}
+
+.login-form-container {
+    background-color: #282c35;
+    border: 1px solid #1c1f26;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items in the center */
+}
+
+.login-form-container label {
+    margin-bottom: 8px;
+    color: #fff; /* White text color */
+}
+
+.login-form-container input {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #1c1f26; /* Darker input background color */
+    color: #fff; /* White text color */
+    border: 1px solid #2c3b4d; /* Darker border color */
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 100%; /* Full width */
+    box-sizing: border-box;
+}
+
+.login-form-container input:focus {
+    outline: none;
+    border-color: #007bff; /* Focus border color */
+}
+
+.login-form-container input::placeholder {
+    color: #9a9a9a; /* Placeholder text color */
+}
+
+.button,
+.login-form-container input[type="submit"] {
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.login-form-container input[type="submit"]:hover {
+    background-color: #007bff; /* Darken the color on hover */
+}
+
+.transparent-image {
+    background: transparent;
+}

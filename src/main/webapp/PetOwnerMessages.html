@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Sample CHAT Using AJAX</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+<h1>PetOwner's Chat Room</h1>
+<div>
+    <form id="myForm" onsubmit='sendChatAJAX(); return false;'>
+        <label hidden for='datetime'>Recipient:</label>
+        <input hidden id='datetime' type='text' name='datetime' value=''><br><br>
+
+
+        <label for='message'></label>
+        <textarea id='message' name='message' rows="5"></textarea> <br>
+
+        <input type='submit'><br>
+    </form>
+</div>
+<div id="ajaxContent">
+    <h2>Messages:</h2>
+    <div id="ajaxContent1"></div>
+
+</div>
+<script src="js/chat.js"></script>
+
+</body>
+
+
+
+</html>

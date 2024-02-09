@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/pet.js"></script>
+       
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+</head>
+<body >
+
+<h3>Edit PET Owner Form</h3>
+<div class="container mt-4 registerForm" id="registerForm">
+    
+        
+                <form onsubmit = "updatePetOwnerData();return false;" id = "ChangeForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="form-group">
+                                <label for="password">Password *</label>
+                                <input type="text" class="form-control" id="passwordInput" name="password"
+                                    pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,15}" >
+                                <small class="form-text text-muted">8-15 characters, at least one letter, one number, and one
+                                    special character</small>
+
+                                <div id="passwordStrengthMessage"> </div>
+                            </div>
+                            <div id="passwordMismatchMessage" style="color: red;">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">First Name *</label>
+                                <input type="text" class="form-control" id="firstname" name="firstname" pattern="[a-zA-Z ]{3,30}"
+                                    >
+                                <small class="form-text text-muted">3-30 characters, no numbers</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="surname">Last Name *</label>
+                                <input type="text" class="form-control" id="lastname" name="lastname" pattern="[a-zA-Z ]{3,30}"
+                                    >
+                                <small class="form-text text-muted">3-30 characters, no numbers</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="dob">Date of Birth *</label>
+                                <input type="date" class="form-control" id="dob" name="birthdate" min="1920-01-01" max="2007-12-31"
+                                    value="1980-01-01" >
+                            </div>
+
+                            <div class="form-group">
+                                <label>Gender *</label><br>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="male" name="gender" value="Male" >
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="female" name="gender" value="Female"
+                                        required>
+                                    <label class="form-check-label" for = "female">Female</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="other" name="gender" value="Other"
+                                        required>
+                                    <label class="form-check-label" for="other">Other</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+
+                    <div class="form-group">
+                        <label for="country">Country *</label>
+                        <select id="country" name="country" class="form-control" >
+                            <option value="Greece">Greece</option>
+                            <option value="Germany">Germany</option>
+                            <option value="UnitedKingdom">United Kingdom</option>
+                            <option value="Other">OtherÂ·</option>
+                        </select>
+                    </div>
+
+
+                        <div class="form-group">
+                            <label for="personalPage">Personal Page (URL)</label>
+                            <input type="url" id="personalpage" name="personalpage" class="form-control">
+                            <small class="form-text text-muted">Enter URL (eg Facebook account, Instagram, LinkedIn).</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="job">Job *</label>
+                            <input type="text" id="job" name="job" class="form-control" pattern="[a-zA-Z ]{3,30}" >
+                            <small class="form-text text-muted">3-30 characters (no numbers).</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mobilePhone">Mobile phone *</label>
+                            <input type="tel" id="telephone" name="telephone" class="form-control" pattern="\d{10,14}"
+                                >
+                            <small class="form-text text-muted">10-14 digits.</small>
+                        </div>
+ 
+
+                        <div class="text-center">
+                            <button id="submitButton" type="submit" class="btn btn-primary">CHANGE</button>
+                        </div>
+                </form>
+            </div>
+
+
+</body>
+</html>

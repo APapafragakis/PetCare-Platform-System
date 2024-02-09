@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+            <form id="questiontogpt" name="questiontogpt" onsubmit='call_chatGPT();return false;'>
+                
+            <div>
+                <label for="userinput">Questions *</label>
+                <select id="Type" name="userinput">
+                    <option value="What does a cat eat">What does a cat eat?</option>
+                    <option value="What does a dog eat">What does a dog eat?</option>
+                </select>
+            </div>
+                
+            <input type="submit" class="button" value="Question">
+            </form>
+        
+       
+        <div id="responseGPT"></div>
+
+    </body>
+</html>
