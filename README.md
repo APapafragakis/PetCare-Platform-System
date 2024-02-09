@@ -47,11 +47,16 @@ The Pet Care Management System, also known as "Pet Care," is a web-based informa
 **Note:** Registered users should not have access to other users' information, except for administrators.
 
 ## Technologies Used
-- Frontend: HTML, CSS, JavaScript
-- Backend: Node.js, Express.js
-- Database: MongoDB
-- Authentication: JSON Web Tokens (JWT)
-- Additional Libraries: Socket.IO (for real-time messaging)
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (managed with XAMPP and phpMyAdmin)
+- **Authentication:** JSON Web Tokens (JWT)
+- **Additional Libraries:** 
+    - Socket.IO (for real-time messaging)
+    - AJAX (for asynchronous client-server communication)
+    - Servlets (for server-side Java programming)
+
+**Note:** We utilized XAMPP and phpMyAdmin for managing the MySQL database. AJAX was employed for asynchronous data exchange between the client and server, while Servlets facilitated server-side Java programming to handle HTTP requests and responses.
 
 ## Setup Instructions
 1. Clone the repository to your local machine.
@@ -60,9 +65,8 @@ The Pet Care Management System, also known as "Pet Care," is a web-based informa
 4. Start the server using `npm start`.
 
 ## Contributors
-- John Doe
-- Jane Smith
+- Alexandros Papafragkakisl, CSD5084
+- Dimitris Dalis, CSD4700
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-</details>
+## Extra info
+It is the final project of CS-359 Web Development in my university.
