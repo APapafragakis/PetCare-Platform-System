@@ -1,4 +1,4 @@
-<summary><strong>Pet Care Management System </strong></summary>
+<strong>Pet Care Management System </strong>
 
 ## Description
 
